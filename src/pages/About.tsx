@@ -166,22 +166,14 @@ export default function About() {
               className="
           relative
           block
-          w-49
-          h-45
+        
+         
           flex-none
           overflow-hidden
-          rounded-2xl
           bg-white
-          border
-          border-[var(--line)]
-          shadow-[0_12px_30px_rgba(0,0,0,0.13)]
-          ring-4
-          ring-[#b9d79b]/30
           transition-transform
           duration-300
-          hover:scale-[1.04]
-          max-[767px]:w-[125px]
-          max-[767px]:h-[125px]
+          hover:scale-[1.04]       
         "
             >
               <img
@@ -189,54 +181,43 @@ export default function About() {
                 alt="Money Lending License and SCUML certification"
                 className="
             block
-            w-full
-            h-full
+            w-70
+            h-70
             object-contain
             p-1
           "
               />
             </span>
+          </figure>
 
+          {/* Action Buttons */}
+          <div>
             <figcaption
               className="
           max-w-[18ch]
-          text-[var(--ink)]
+         mb-4
           text-[13px]
-          leading-[1.5]
+          leading-normal
           font-semibold
         "
             >
               Money Lending License &amp; SCUML Certified
             </figcaption>
-          </figure>
-
-          {/* Action Buttons */}
-          <div
-            className="
+            <div
+              className="
         flex
         items-center
         justify-end
-        gap-2
-        max-[1100px]:col-start-2
-        max-[1100px]:row-start-1
-        max-[1100px]:flex-wrap
-        max-[767px]:col-auto
-        max-[767px]:row-auto
-        max-[767px]:grid
-        max-[767px]:grid-cols-1
-        max-[767px]:w-full
-        [&_.signature-button]:whitespace-nowrap
-        max-[767px]:[&_.signature-button]:w-full
-      "
-            aria-label="Choose how to work with Orchid"
-          >
-            <Button to="/contact?service=access-to-finance">
-              Discuss funding needs
-            </Button>
+        gap-2  "
+            >
+              <Button to="/contact?service=access-to-finance">
+                Discuss funding needs
+              </Button>
 
-            <Button to="/services" variant="outline">
-              Explore consulting services
-            </Button>
+              <Button to="/services" variant="outline">
+                Explore consulting services
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
