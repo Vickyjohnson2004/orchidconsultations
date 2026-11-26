@@ -165,9 +165,7 @@ export default function About() {
             <span
               className="
           relative
-          block
-        
-         
+          blockt        
           flex-none
           overflow-hidden
           bg-white
